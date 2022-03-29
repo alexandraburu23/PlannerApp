@@ -74,6 +74,7 @@ public class User {
     @ColumnInfo(name = "password")
     private String password;
 
+
     public User(@NonNull String firstName, @NonNull String phoneNumber, @NonNull String email, @NonNull String username, @NonNull String password) {
         this.firstName = firstName;
         this.phoneNumber = phoneNumber;
