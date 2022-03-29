@@ -8,6 +8,8 @@ import androidx.room.RoomDatabase;
 
 import com.example.plannerapp.data.UserDao;
 import com.example.plannerapp.model.User;
+import com.example.plannerapp.data.NoteDao;
+import com.example.plannerapp.model.Note;
 
 @Database(entities = {User.class}, exportSchema = false, version = 1)
 public abstract class MyRoomDatabase extends RoomDatabase {
