@@ -15,6 +15,8 @@ import com.example.plannerapp.model.Converters;
 import com.example.plannerapp.model.Event;
 import com.example.plannerapp.model.Reminder;
 import com.example.plannerapp.model.User;
+import com.example.plannerapp.data.NoteDao;
+import com.example.plannerapp.model.Note;
 
 @Database(entities = {User.class, Event.class, Reminder.class}, exportSchema = false, version = 1)
 @TypeConverters({Converters.class})
