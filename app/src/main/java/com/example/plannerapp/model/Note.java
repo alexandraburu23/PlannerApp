@@ -3,24 +3,25 @@ package com.example.plannerapp.model;
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.ForeignKey;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
 import static androidx.room.ForeignKey.CASCADE;
 
-@Entity(tableName = "note", indices = {@Index(value ={"title", "id_FkUser"}, unique = true)})
+@Entity(tableName = "note", foreignKeys = {
+        @ForeignKey(entity = User.class,
+                parentColumns = "idUser",
+                childColumns = "id_FkUser",
+                onDelete = CASCADE,
+                onUpdate = CASCADE
+        )},
+        indices = {@Index(value ={"idNote", "id_FkUser"}, unique = true)})
 
 public class Note {
     @PrimaryKey(autoGenerate = true)
     private int idNote;
 
-    @ForeignKey
-            (entity = User.class,
-                    parentColumns = "idUser",
-                    childColumns = "id_FkUser",
-                    onDelete = CASCADE,
-                    onUpdate = CASCADE
-
-            )
+    @ColumnInfo(name = "id_FkUser")
     private long id_FkUser;
 
     @ColumnInfo(name = "title")
@@ -63,10 +64,10 @@ public class Note {
     }
 
     public Note(Note note) {
-        this.idNote = idNote;
-        this.id_FkUser = id_FkUser;
-        this.title = title;
-        this.content = content;
+        this.idNote = note.getIdNote();
+        this.id_FkUser = note.getId_FkUser();
+        this.title = note.getTitle();
+        this.content = note.getContent();
     }
 
     public Note(String title, String content) {

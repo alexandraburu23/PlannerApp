@@ -10,7 +10,15 @@ import androidx.room.PrimaryKey;
 
 import java.time.LocalDate;
 
-@Entity(tableName = "reminder", indices = {@Index(value ={"idReminder", "id_FkEvent"}, unique = true)})
+@Entity(tableName = "reminder", foreignKeys = {
+        @ForeignKey(
+                entity = Event.class,
+                parentColumns = "idEvent",
+                childColumns = "id_FkEvent",
+                onDelete = CASCADE,
+                onUpdate = CASCADE
+        )},
+        indices = {@Index(value ={"idReminder", "id_FkEvent"}, unique = true)})
 public class Reminder {
     @PrimaryKey(autoGenerate = true)
     private int idReminder;
@@ -21,13 +29,7 @@ public class Reminder {
     @ColumnInfo(name = "date")
     private LocalDate date;
 
-    @ForeignKey(
-            entity = Event.class,
-            parentColumns = "idEvent",
-            childColumns = "id_FkEvent",
-            onDelete = CASCADE,
-            onUpdate = CASCADE
-    )
+    @ColumnInfo(name = "id_FkEvent")
     private long id_FkEvent;
 
     public Reminder(String description, LocalDate date) {

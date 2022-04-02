@@ -9,7 +9,7 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "user", indices = {@Index(value ="username", unique = true)})
 public class User {
     @PrimaryKey(autoGenerate = true)
-    private int idUser;
+    private long idUser;
 
     @ColumnInfo(name = "email")
     private String email;
@@ -20,7 +20,7 @@ public class User {
     @ColumnInfo(name = "password")
     private String password;
 
-    public int getIdUser() {
+    public long getIdUser() {
         return idUser;
     }
 

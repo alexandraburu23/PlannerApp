@@ -11,10 +11,21 @@ import androidx.room.PrimaryKey;
 
 import java.time.LocalDate;
 
-@Entity(tableName = "event", indices = {@Index(value ={"idEvent", "id_FkUser"}, unique = true)})
+@Entity(tableName = "event", foreignKeys = {
+        @ForeignKey(
+            entity = User.class,
+            parentColumns = "idUser",
+            childColumns = "id_FkUser",
+            onDelete = CASCADE,
+            onUpdate = CASCADE
+        )},
+        indices = {@Index(value ={"idEvent", "id_FkUser"}, unique = true)})
 public class Event {
     @PrimaryKey(autoGenerate = true)
     private int idEvent;
+
+    @ColumnInfo(name = "id_FkUser")
+    private long id_FkUser;
 
     @ColumnInfo(name = "title")
     private String title;
@@ -28,14 +39,7 @@ public class Event {
     @ColumnInfo(name = "location")
     private String location;
 
-    @ForeignKey(
-            entity = User.class,
-            parentColumns = "idUser",
-            childColumns = "id_FkUser",
-            onDelete = CASCADE,
-            onUpdate = CASCADE
-    )
-    private long id_FkUser;
+
 
     public int getIdEvent() {
         return idEvent;
