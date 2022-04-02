@@ -7,13 +7,9 @@ import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "user", indices = {@Index(value ="username", unique = true)})
-
 public class User {
     @PrimaryKey(autoGenerate = true)
-    private int idUser;
-
-    @ColumnInfo(name = "firstName")
-    private String firstName;
+    private long idUser;
 
     @ColumnInfo(name = "email")
     private String email;
@@ -24,27 +20,12 @@ public class User {
     @ColumnInfo(name = "password")
     private String password;
 
-    public User(@NonNull String firstName, @NonNull String email, @NonNull String username, @NonNull String password) {
-        this.firstName = firstName;
-        this.email = email;
-        this.username = username;
-        this.password = password;
-    }
-
-    public int getIdUser() {
+    public long getIdUser() {
         return idUser;
     }
 
     public void setIdUser(int idUser) {
         this.idUser = idUser;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
     }
 
     public String getEmail() {
@@ -68,6 +49,14 @@ public class User {
     }
 
     public void setPassword(String password) {
+        this.password = password;
+    }
+
+
+    public User(@NonNull String email, @NonNull String username, @NonNull String password) {
+
+        this.email = email;
+        this.username = username;
         this.password = password;
     }
 }
