@@ -33,8 +33,10 @@ public class RegisterActivity extends AppCompatActivity {
             String password = editPassword.getText().toString();
             String confirmPassword = editCPassword.getText().toString();
             createPerson(password, confirmPassword, username);
+            Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+            startActivity(intent);
         });
-        login.setOnClickListener(v -> startActivity(new Intent(RegisterActivity.this, LoginActivity.class)));
+        //login.setOnClickListener(v -> startActivity(new Intent(RegisterActivity.this, LoginActivity.class)));
     }
 
     private Boolean validateInput(User user, String confirmPassword) {

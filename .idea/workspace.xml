@@ -5,6 +5,9 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
@@ -27,14 +30,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11ee9237-71f9-41f6-bcdb-7c51e30c6e83" name="Default Changelist" comment="starting main activity">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="11ee9237-71f9-41f6-bcdb-7c51e30c6e83" name="Default Changelist" comment="initial register">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/plannerapp/RegisterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/plannerapp/RegisterActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/plannerapp/data/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/plannerapp/data/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/plannerapp/data/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/plannerapp/data/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/plannerapp/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/plannerapp/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/plannerapp/model/UserViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/plannerapp/model/UserViewModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +110,14 @@
     <option name="MODULE_TAB" value="Properties" />
     <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.plannerapp" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.plannerapp" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -233,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649164344928</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="initial register">
+      <created>1649175286250</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649175286250</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -271,6 +283,7 @@
     <MESSAGE value="Adding Entity Note" />
     <MESSAGE value="resolving foreign key issues" />
     <MESSAGE value="starting main activity" />
-    <option name="LAST_COMMIT_MESSAGE" value="starting main activity" />
+    <MESSAGE value="initial register" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial register" />
   </component>
 </project>
