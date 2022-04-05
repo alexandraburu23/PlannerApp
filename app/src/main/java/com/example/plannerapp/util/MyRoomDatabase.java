@@ -20,12 +20,18 @@ import com.example.plannerapp.model.User;
 import com.example.plannerapp.data.NoteDao;
 import com.example.plannerapp.model.Note;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+
+
 @Database(entities = {User.class, Event.class, Reminder.class, Note.class, Task.class}, exportSchema = false, version = 1)
 @TypeConverters({Converters.class})
 public abstract class MyRoomDatabase extends RoomDatabase {
     private static final String DB_NAME = "person_db";
     private static MyRoomDatabase instance;
-
+    public static final int NUMBER_OF_THREADS = 10;
+    public static final ExecutorService databaseWriteExecutor = Executors.newFixedThreadPool(NUMBER_OF_THREADS);
     public static synchronized MyRoomDatabase getDatabase(Context context){
         if(instance == null) {
             instance = Room.databaseBuilder(context.getApplicationContext(), MyRoomDatabase.class, DB_NAME)
