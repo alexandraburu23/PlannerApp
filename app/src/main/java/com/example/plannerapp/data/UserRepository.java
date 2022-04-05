@@ -19,4 +19,28 @@ public class UserRepository {
     public List<User> getAllData(){
         return allUsers;
     }
+
+    public void insertUser(User user){
+        MyRoomDatabase.databaseWriteExecutor.execute(()-> userDao.insertUser(user));
+    }
+
+    public void deleteAll(){
+        MyRoomDatabase.databaseWriteExecutor.execute(()->userDao.deleteAll());
+    }
+
+    public void updateUser(User user){
+        MyRoomDatabase.databaseWriteExecutor.execute(() -> userDao.updateUser(user));
+    }
+
+    public User getUserByUsername(String inputUsername){
+        return userDao.getUserByUsername(inputUsername);
+    }
+    public User getUser(int id){
+        return userDao.getUser(id);
+    }
+
+    public User getUserByUsernameAndPassword(String inputUsername, String inputPassword){
+        return userDao.getUserByUsernameAndPassword(inputUsername, inputPassword);
+    }
+
 }
