@@ -14,9 +14,9 @@ import java.util.List;
 
 @Dao
 public interface NoteDao {
-    @Transaction
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
-    void insertNote(Note note);
+//    @Transaction
+//    @Insert(onConflict = OnConflictStrategy.IGNORE)
+//    void insertNote(Note note);
 
     @Query("Select * from note")
     List<Note> getAllNotes();
