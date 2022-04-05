@@ -52,9 +52,8 @@ public class User {
         this.password = password;
     }
 
-
+    public User(){}
     public User(@NonNull String email, @NonNull String username, @NonNull String password) {
-
         this.email = email;
         this.username = username;
         this.password = password;

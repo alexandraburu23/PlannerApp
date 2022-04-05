@@ -46,4 +46,7 @@ public class UserViewModel extends AndroidViewModel {
         return repository.getUserByUsernameAndPassword(username, password);
     }
 
+    public void registerUser(User user){
+        repository.registerUser(user);
+    }
 }
