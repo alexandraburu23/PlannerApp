@@ -27,16 +27,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11ee9237-71f9-41f6-bcdb-7c51e30c6e83" name="Default Changelist" comment="starting main activity">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/plannerapp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/plannerapp/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/plannerapp/data/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/plannerapp/data/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/plannerapp/data/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/plannerapp/data/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/plannerapp/util/MyRoomDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/plannerapp/util/MyRoomDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-    </list>
+    <list default="true" id="11ee9237-71f9-41f6-bcdb-7c51e30c6e83" name="Default Changelist" comment="initial login" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -232,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649164344928</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="initial login">
+      <created>1649168356308</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649168356308</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -265,6 +263,7 @@
     <MESSAGE value="Adding Entity Note" />
     <MESSAGE value="resolving foreign key issues" />
     <MESSAGE value="starting main activity" />
-    <option name="LAST_COMMIT_MESSAGE" value="starting main activity" />
+    <MESSAGE value="initial login" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial login" />
   </component>
 </project>
