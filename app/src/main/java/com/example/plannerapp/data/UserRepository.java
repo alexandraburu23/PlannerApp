@@ -43,4 +43,7 @@ public class UserRepository {
         return userDao.getUserByUsernameAndPassword(inputUsername, inputPassword);
     }
 
+    public void registerUser(User user){
+        MyRoomDatabase.databaseWriteExecutor.execute(()-> userDao.registerUser(user));
+    }
 }
