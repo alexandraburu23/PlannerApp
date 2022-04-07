@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/layout-land/activity_homepage.xml" value="0.31040564373897706" />
         <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/layout-land/activity_login.xml" value="0.31040564373897706" />
         <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/layout-land/activity_main.xml" value="0.31040564373897706" />
         <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/layout-land/activity_register.xml" value="0.31040564373897706" />
@@ -10,6 +11,11 @@
         <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/layout/activity_login.xml" value="0.358695652173913" />
         <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
         <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/layout/activity_register.xml" value="0.358695652173913" />
+        <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/layout/nav_header.xml" value="0.358695652173913" />
+        <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/layout/toolbar.xml" value="0.358695652173913" />
+        <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/menu/drawer_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/menu/drawer_view.xml" value="0.36666666666666664" />
+        <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/menu/navigation_menu.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
