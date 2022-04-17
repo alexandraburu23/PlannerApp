@@ -5,4 +5,8 @@
     <string name="nav_open">Open navigation drawer</string>
     <string name="nav_close">Close navigation drawer</string>
 
+    <string name="facebook_app_id">1099568683921260</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">b3edc4743661b57aabb28523f7f7bfe3</string>
+
 </resources>

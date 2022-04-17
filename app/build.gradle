@@ -41,4 +41,6 @@ dependencies {
 
     implementation "androidx.room:room-runtime:$rootProject.roomVersion"
     annotationProcessor "androidx.room:room-compiler:$rootProject.roomVersion"
+
+    implementation 'com.facebook.android:facebook-login:latest.release'
 }
