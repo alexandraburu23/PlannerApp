@@ -6,6 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
+//C:\Users\ASUS\AppData\Local\Android\Sdk
+//keytool -exportcert -alias androiddebugkey -keystore "C:\Users\ASUS\.android\debug.keystore" | "PATH_TO_OPENSSL_LIBRARY\bin\openssl" sha1 -binary | "PATH_TO_OPENSSL_LIBRARY\bin\openssl" base64
+
+
+
+
 public class MainActivity extends AppCompatActivity {
 
     Button btn_login, btn_register;
