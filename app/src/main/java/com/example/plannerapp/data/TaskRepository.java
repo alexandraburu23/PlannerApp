@@ -21,4 +21,21 @@ public class TaskRepository {
     public List<Task> getAllData(){
         return allTasks;
     }
+
+    public void insertTask(Task task){
+        MyRoomDatabase.databaseWriteExecutor.execute(()-> taskDao.insertTask(task));
+    }
+    public void updateTask(Task task){
+        MyRoomDatabase.databaseWriteExecutor.execute(()-> taskDao.updateTask(task));
+    }
+    public void deleteTask(Task task){
+        MyRoomDatabase.databaseWriteExecutor.execute(()-> taskDao.deleteTask(task));
+    }
+    public List<Task> getAllTasksForUser(Integer userId){
+        return taskDao.getAllTasksForUser(userId);
+    }
+
+    public Task getTaskById(Integer taskId){
+        return taskDao.getTaskById(taskId);
+    }
 }

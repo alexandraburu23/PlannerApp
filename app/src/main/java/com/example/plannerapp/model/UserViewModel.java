@@ -19,7 +19,7 @@ public class UserViewModel extends AndroidViewModel {
         allUsers = repository.getAllData();
     }
 
-    public List<User> getAllTutors(){
+    public List<User> getAllUsers(){
         return allUsers;
     }
     public void insert(User user){

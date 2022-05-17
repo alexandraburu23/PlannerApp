@@ -30,8 +30,8 @@ public interface UserDao {
     @Query("Select * from user where idUser=:idUser")
     User getUser(int idUser);
 
-    @Query("Select * from user where username=:username")
-    User getUserByUsername(String username);
+    @Query("Select * from user where username=:usernameInput")
+    User getUserByUsername(String usernameInput);
 
     @Query("Select * from user where username=:username and password=:password")
     User getUserByUsernameAndPassword(String username, String password);

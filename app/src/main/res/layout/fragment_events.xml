@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/green">
 
     <TextView
@@ -10,6 +11,32 @@
         android:text="My Events"
         android:textSize="30sp"
         android:layout_centerInParent="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.drawing.Sample"
+        tools:ignore="HardcodedText" >
 
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="300dp">
+
+            <Button
+                android:id="@+id/buttonPlus"
+                android:background="@drawable/round_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="50sp"
+                />
+
+        </TableRow>
+
+    </LinearLayout>
 
 </RelativeLayout>
