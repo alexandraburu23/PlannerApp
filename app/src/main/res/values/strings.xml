@@ -4,7 +4,7 @@
     <string name="nav_open">Open navigation drawer</string>
     <string name="nav_close">Close navigation drawer</string>
 
-    <string name="com.twitter.sdk.android.CONSUMER_KEY">K1DpYgumS7LGkQYAwq9VWV7EP</string>
-    <string name="com.twitter.sdk.android.CONSUMER_SECRET">z4NDdMEoVt8Z4nHqjcf04D8iT1v970tl5rPojEvMkKhzgz8pYC</string>
+<!--    <string name="com.twitter.sdk.android.CONSUMER_KEY">K1DpYgumS7LGkQYAwq9VWV7EP</string>-->
+<!--    <string name="com.twitter.sdk.android.CONSUMER_SECRET">z4NDdMEoVt8Z4nHqjcf04D8iT1v970tl5rPojEvMkKhzgz8pYC</string>-->
 
 </resources>
