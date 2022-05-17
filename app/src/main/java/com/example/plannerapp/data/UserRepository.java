@@ -46,4 +46,5 @@ public class UserRepository {
     public void registerUser(User user){
         MyRoomDatabase.databaseWriteExecutor.execute(()-> userDao.registerUser(user));
     }
+
 }

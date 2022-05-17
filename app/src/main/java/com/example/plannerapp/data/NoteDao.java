@@ -21,10 +21,18 @@ public interface NoteDao {
     @Query("Select * from note")
     List<Note> getAllNotes();
 
+    @Insert
+    void insertNote(Note note);
+
     @Update
     void updateNote(Note note);
 
     @Delete
     void deleteNote(Note note);
 
+    @Query("Select * from note where id_FkUser=:userId")
+    List<Note> getAllNotesForUser(Integer userId);
+
+    @Query("Select * from note where idNote=:noteId")
+    Note getNoteById(Integer noteId);
 }

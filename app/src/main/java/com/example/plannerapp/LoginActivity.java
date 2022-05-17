@@ -1,6 +1,8 @@
 package com.example.plannerapp;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -43,8 +45,11 @@ public class LoginActivity extends AppCompatActivity {
                     }
                     else
                     {
+                        SharedPreferences preferences = this.getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+                        preferences.edit().putString("username", username).apply();
+                        preferences.edit().putString("password", password).apply();
                         Intent intent = new Intent(LoginActivity.this, WelcomeActivity.class);
-                        intent.putExtra("userName", user.getUsername());
+                        intent.putExtra("username", user.getUsername());
                         startActivity(intent);
                     }
                 }).start();

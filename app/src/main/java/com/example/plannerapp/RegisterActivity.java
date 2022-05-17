@@ -32,7 +32,8 @@ public class RegisterActivity extends AppCompatActivity {
             String username = editUsername.getText().toString();
             String password = editPassword.getText().toString();
             String confirmPassword = editCPassword.getText().toString();
-            createPerson(password, confirmPassword, username);
+            String email = editEmail.getText().toString();
+            createPerson(password, confirmPassword, username, email);
             Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
             startActivity(intent);
         });
@@ -45,10 +46,11 @@ public class RegisterActivity extends AppCompatActivity {
                 !confirmPassword.equals("");
     }
 
-    private void createPerson(String password, String confirmPassword, String username){
+    private void createPerson(String password, String confirmPassword, String username, String email){
         User user = new User();
         user.setUsername(username);
         user.setPassword(password);
+        user.setEmail(email);
         if(!validateInput(user, confirmPassword))
         {
             Toast.makeText(getApplicationContext(), "Fields Required", Toast.LENGTH_SHORT).show();
