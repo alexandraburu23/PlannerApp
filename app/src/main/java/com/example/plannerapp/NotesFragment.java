@@ -124,12 +124,27 @@ public class NotesFragment extends Fragment {
                                     startActivity(newIntent);
                                 });
 
+                                Button btnShare =  new Button(getActivity().getApplicationContext());
+                                btnShare.setText("SHARE");
+                                btnShare.setBackgroundColor(Color.parseColor("#ff0099cc"));
+                                btnShare.setOnClickListener(v->{
+
+                                    Intent sendIntent = new Intent();
+                                    sendIntent.setAction(Intent.ACTION_SEND);
+                                    sendIntent.putExtra(Intent.EXTRA_TEXT, note.getContent());
+                                    sendIntent.setType("text/plain");
+
+                                    Intent shareIntent = Intent.createChooser(sendIntent, null);
+                                    startActivity(shareIntent);
+                                });
+
                                 TextView delimitator = new TextView(getActivity().getApplicationContext());
 
                                 groupLinear.addView(textViewTitle);
                                 groupLinear.addView(textViewContent);
                                 groupLinear.addView(btnEdit);
                                 groupLinear.addView(btnDelete);
+                                groupLinear.addView(btnShare);
                                 groupLinear.addView(delimitator);
                                 linearLayout.addView(groupLinear);
                             });
