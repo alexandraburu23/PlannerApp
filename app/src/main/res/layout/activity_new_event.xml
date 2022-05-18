@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="match_parent"
@@ -19,6 +18,14 @@
             android:orientation="vertical">
 
 
+            <EditText
+                android:id="@+id/title_edit"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Title"
+                android:inputType="textPersonName" />
 
             <EditText
                 android:id="@+id/description_edit"
@@ -28,19 +35,23 @@
                 android:ems="10"
                 android:hint="Description"
                 android:inputType="textMultiLine" />
-
-
+            <EditText
+                android:id="@+id/location_edit"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Location"
+                android:inputType="textPersonName" />
             <TextView
-                android:id = "@+id/deadline"
+                android:id = "@+id/date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:layout_weight="0"
-                android:text=" Deadline"
+                android:text=" Date"
                 android:textSize="20dp"
                 android:textColor="@android:color/darker_gray"
-
-
                 />
 
             <DatePicker
@@ -48,11 +59,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="191dp"
                 android:layout_weight="0"
-
                 android:calendarViewShown="false"
                 android:datePickerMode="spinner"
                 android:hint="Date"
                 app:backgroundTint="@android:color/holo_blue_dark" />
+
+
 
             <Button
                 android:id="@+id/btn_save"
@@ -64,5 +76,4 @@
 
         </LinearLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

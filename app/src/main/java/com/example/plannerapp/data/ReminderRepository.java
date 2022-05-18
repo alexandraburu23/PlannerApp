@@ -20,4 +20,25 @@ public class ReminderRepository {
     public List<Reminder> getAllData(){
         return allReminders;
     }
+
+    public void insertReminder(Reminder reminder){
+        MyRoomDatabase.databaseWriteExecutor.execute(()-> reminderDao.insertReminder(reminder));
+    }
+    public void updateReminder(Reminder reminder){
+        MyRoomDatabase.databaseWriteExecutor.execute(()-> reminderDao.updateReminder(reminder));
+    }
+    public void deleteReminder(Reminder reminder){
+        MyRoomDatabase.databaseWriteExecutor.execute(()-> reminderDao.deleteReminder(reminder));
+    }
+    public List<Reminder> getAllRemindersForUser(Integer userId){
+        return reminderDao.getAllRemindersForUser(userId);
+    }
+
+    public List<Reminder> getAllRemindersForEvent(Integer eventId){
+        return reminderDao.getAllRemindersForEvent(eventId);
+    }
+
+    public Reminder getReminderById(Integer noteId){
+        return reminderDao.getReminderById(noteId);
+    }
 }
