@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/green">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/titleRecommend"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="My Tasks"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/layout_list_tasks"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.drawing.Sample"
+        tools:ignore="HardcodedText" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="300dp">
+
+            <Button
+                android:id="@+id/buttonPlus"
+                android:background="@drawable/round_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="50sp"
+                />
+
+
+        </TableRow>
+
+    </LinearLayout>
+
+</RelativeLayout>
