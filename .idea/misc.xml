@@ -22,15 +22,18 @@
         <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/layout/activity_new_task.xml" value="0.37257019438444927" />
         <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/layout/activity_register.xml" value="0.358695652173913" />
         <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/layout/activity_reminder_list.xml" value="0.2604166666666667" />
+        <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/layout/activity_search.xml" value="0.2604166666666667" />
         <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/layout/fragment_events.xml" value="0.358695652173913" />
         <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/layout/fragment_notes.xml" value="0.358695652173913" />
         <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/layout/fragment_reminders.xml" value="0.358695652173913" />
         <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/layout/fragment_tasks.xml" value="0.358695652173913" />
         <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/layout/nav_header.xml" value="0.358695652173913" />
+        <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/layout/search_item.xml" value="0.2604166666666667" />
         <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/layout/toolbar.xml" value="0.358695652173913" />
         <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/menu/drawer_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/menu/drawer_view.xml" value="0.36666666666666664" />
         <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/menu/navigation_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/laptop asus alex/Facultate/ANUL 3/Sem 2/android/PlannerApp/app/src/main/res/menu/search_menu.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

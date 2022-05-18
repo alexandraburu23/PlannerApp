@@ -1,5 +1,6 @@
 package com.example.plannerapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -84,6 +85,11 @@ public class WelcomeActivity extends AppCompatActivity implements NavigationView
                 reminderFragment.setArguments(bundle2);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         reminderFragment).commit();
+                break;
+            case R.id.search:
+                Intent intent;
+                intent = new Intent(WelcomeActivity.this, SearchActivity.class);
+                startActivity(intent);
                 break;
             case R.id.profile:
                 Toast.makeText(this, "My profile", Toast.LENGTH_SHORT).show();
