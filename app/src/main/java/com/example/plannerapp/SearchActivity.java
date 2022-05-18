@@ -1,9 +1,13 @@
 package com.example.plannerapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,6 +39,26 @@ public class SearchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
+//        createExampleList();
+        buildRecyclerView();
+
+        EditText editText = findViewById(R.id.edittext);
+        editText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                filter(s.toString());
+            }
+        });
         // initializing our variables.
         taskRV = findViewById(R.id.idSearch);
 
@@ -84,7 +108,7 @@ public class SearchActivity extends AppCompatActivity {
         // running a for loop to compare elements.
         for (Task task : taskArrayList) {
             // checking if the entered string matched with any item of our recycler view.
-            if (task.getCategory().toLowerCase().contains(text.toLowerCase())) {
+            if (task.getCategory().toLowerCase().contains(text.toLowerCase())||task.getDescription().toLowerCase().contains(text.toLowerCase())) {
                 // if the item is matched we are
                 // adding it to our filtered list.
                 filteredlist.add(task);
@@ -112,28 +136,30 @@ public class SearchActivity extends AppCompatActivity {
 //        taskArrayList.add(new CourseModal("C++", "C++ Self Paced Course"));
 //        taskArrayList.add(new CourseModal("Python", "Python Self Paced Course"));
 //        taskArrayList.add(new CourseModal("Fork CPP", "Fork CPP Self Paced Course"));
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
+        new Thread(() -> {
+//            @Override
+//            public void run() {
                 taskViewModel = new TaskViewModel(getApplication());
                 taskArrayList = (ArrayList<Task>) taskViewModel.getAllTasks();
+                runOnUiThread((() -> {
+                    // initializing our adapter class.
+                    adapter = new TaskAdapter(taskArrayList, SearchActivity.this);
 
+                    // adding layout manager to our recycler view.
+                    LinearLayoutManager manager = new LinearLayoutManager(this);
+                    taskRV.setHasFixedSize(true);
 
-            }
+                    // setting layout manager
+                    // to our recycler view.
+                    taskRV.setLayoutManager(manager);
+
+                    // setting adapter to
+                    // our recycler view.
+                    taskRV.setAdapter(adapter);
+                }));
+
+//            }
         }).start();
-        // initializing our adapter class.
-        adapter = new TaskAdapter(taskArrayList, SearchActivity.this);
 
-        // adding layout manager to our recycler view.
-        LinearLayoutManager manager = new LinearLayoutManager(this);
-        taskRV.setHasFixedSize(true);
-
-        // setting layout manager
-        // to our recycler view.
-        taskRV.setLayoutManager(manager);
-
-        // setting adapter to
-        // our recycler view.
-        taskRV.setAdapter(adapter);
     }
 }

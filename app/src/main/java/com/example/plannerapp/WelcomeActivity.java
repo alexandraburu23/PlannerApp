@@ -80,12 +80,7 @@ public class WelcomeActivity extends AppCompatActivity implements NavigationView
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         eventsFragment).commit();
                 break;
-            case R.id.nav_reminders:
-                ReminderFragment reminderFragment = new ReminderFragment();
-                reminderFragment.setArguments(bundle2);
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        reminderFragment).commit();
-                break;
+
             case R.id.search:
                 Intent intent;
                 intent = new Intent(WelcomeActivity.this, SearchActivity.class);
@@ -93,9 +88,15 @@ public class WelcomeActivity extends AppCompatActivity implements NavigationView
                 break;
             case R.id.profile:
                 Toast.makeText(this, "My profile", Toast.LENGTH_SHORT).show();
+                Intent intent2;
+                intent2 = new Intent(WelcomeActivity.this, ProfileActivity.class);
+                startActivity(intent2);
                 break;
             case R.id.logout:
                 Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
+                Intent intent3;
+                intent3 = new Intent(WelcomeActivity.this, MainActivity.class);
+                startActivity(intent3);
                 break;
         }
         drawer.closeDrawer(GravityCompat.START);

@@ -6,12 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/green">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My Notes"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"/>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -43,25 +38,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context="com.example.drawing.Sample"
-        tools:ignore="HardcodedText" >
+        tools:ignore="HardcodedText">
 
         <TableRow
             android:id="@+id/tableRow1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:layout_marginBottom="15dp"
-            android:layout_marginStart="300dp">
+            android:layout_marginStart="300dp"
+            android:layout_marginBottom="15dp">
 
             <Button
                 android:id="@+id/buttonPlus"
-                android:background="@drawable/round_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/round_button"
                 android:text="+"
                 android:textColor="@android:color/holo_blue_dark"
-                android:textSize="50sp"
-                />
+                android:textSize="50sp" />
 
 
         </TableRow>
